@@ -35,12 +35,28 @@ int main(){
     // ----------------------------------------------------
     printf("\n==== movimento da rainha ====\n");
     int rainha = 1;
-    do //RNTRADA (EXECUÇAO DE PELO MENOS 1X GARANTIDA)
+    do //ENTRADA (EXECUÇAO DE PELO MENOS 1X GARANTIDA)
     {
         printf("esquerda\n"); // SAIDA
         rainha++; // INCREMENTO
     } while (rainha <= 8); //CONDIÇOES
     printf("a rainha chegou ao seu destino.\n");
+
+      // ----------------------------------------------------
+    // CAVALO: 2 casas para a baixo 1 para esquerda (Usando FOR E WHILE OU DO-WHILE LOOP ANINHADO)
+    // ----------------------------------------------------
+    printf("\n==== movimento da cavalo ====\n");
+    
+    for ( int i = 0; i < 2; i++){
+        printf("baixo\n");
+    }
+    int j = 0;
+    while (j < 1){ //imprimindo 1x "Esquerda"
+        printf("esquerda\n");
+        j++;
+        }
+    printf("a cavalo chegou ao seu destino.\n");   
+    
     
    return 0;
 }
